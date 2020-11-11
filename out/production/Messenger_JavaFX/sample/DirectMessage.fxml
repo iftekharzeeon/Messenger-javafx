@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="413.0" layoutY="44.0" text="Welcome to My Messenger" AnchorPane.rightAnchor="64.0">
+         <font>
+            <Font name="Algerian" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="152.0" layoutY="36.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="83.0" text="Log Out" AnchorPane.leftAnchor="152.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Line endX="700.0" layoutX="101.0" layoutY="107.0" scaleX="6.0" startX="-100.0" AnchorPane.leftAnchor="0.0" />
+      <ScrollPane layoutX="364.0" layoutY="120.0" prefHeight="325.0" prefViewportHeight="315.0" prefViewportWidth="418.5" prefWidth="419.0" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="364.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="120.0">
+         <content>
+            <TextFlow layoutX="364.0" layoutY="120.0" lineSpacing="5.0" maxWidth="-Infinity" prefHeight="314.0" prefWidth="418.0" style="-fx-background-color: D8D4F1; -fx-border-color: #867DB1; -fx-border-width: 4;" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="364.0" AnchorPane.rightAnchor="18.5" AnchorPane.topAnchor="120.0">
+               <padding>
+                  <Insets top="8.0" />
+               </padding>
+            </TextFlow>
+         </content>
+      </ScrollPane>
+      <TextArea layoutX="379.0" layoutY="444.0" maxWidth="314.0" prefHeight="44.0" prefWidth="314.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="379.0" AnchorPane.rightAnchor="107.0" />
+      <Button layoutX="701.0" layoutY="444.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="93.0" text="Send" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="7.5">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ListView layoutX="52.0" layoutY="152.0" prefHeight="283.0" prefWidth="200.0" style="-fx-background-color: D8D4F1; -fx-border-color: #867DB1; -fx-border-width: 3;" AnchorPane.bottomAnchor="65.0" AnchorPane.topAnchor="152.0" />
+      <Label layoutX="52.0" layoutY="120.0" text="Active Clients:" underline="true">
+         <font>
+            <Font name="Arial Narrow" size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="52.0" layoutY="444.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="93.0" text="Refresh" AnchorPane.bottomAnchor="12.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="52.0" layoutY="36.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="76.0" text="Back">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

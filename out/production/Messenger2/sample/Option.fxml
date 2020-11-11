@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Option">
+   <children>
+      <Label layoutX="258.0" layoutY="129.0" text="What do you want to do?" textFill="#540d0d">
+         <font>
+            <Font name="Gill Sans MT" size="27.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Label>
+      <Button layoutX="210.0" layoutY="235.0" mnemonicParsing="false" onAction="#groupChat" prefHeight="48.0" prefWidth="130.0" text="Group Chat" />
+      <Button layoutX="477.0" layoutY="235.0" mnemonicParsing="false" onAction="#directMessage" prefHeight="48.0" prefWidth="144.0" text="Direct Message" />
+   </children>
+</AnchorPane>

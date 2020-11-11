@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ActiveClients">
+   <children>
+      <Label layoutX="266.0" layoutY="88.0" text="Active Clients">
+         <font>
+            <Font name="Book Antiqua" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="242.0" layoutY="158.0" text="Click on Refresh to refresh the list">
+         <font>
+            <Font name="Bookman Old Style" size="19.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listView" layoutX="301.0" layoutY="211.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="33.0" layoutY="57.0" mnemonicParsing="false" onAction="#backButton" prefHeight="41.0" prefWidth="80.0" text="Back">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="689.0" layoutY="57.0" mnemonicParsing="false" onAction="#refreshButton" prefHeight="45.0" prefWidth="91.0" text="Refresh">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="352.0" layoutY="430.0" mnemonicParsing="false" onAction="#startChat" text="Start Chat">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

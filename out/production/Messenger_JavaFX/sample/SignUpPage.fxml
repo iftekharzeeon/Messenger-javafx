@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignUpPage">
+    <children>
+        <Label graphicTextGap="7.0" layoutX="207.0" layoutY="69.0" text="Welcome To My Messenger">
+            <font>
+                <Font name="Algerian" size="30.0" />
+            </font>
+            <effect>
+                <Glow level="0.29">
+                    <input>
+                        <ColorAdjust brightness="-0.76" contrast="-0.85" hue="-0.05" saturation="1.0" />
+                    </input>
+                </Glow>
+            </effect>
+        </Label>
+        <GridPane layoutX="152.0" layoutY="140.0" prefHeight="319.0" prefWidth="497.0">
+            <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="154.0" minWidth="10.0" prefWidth="66.0" />
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="154.0" minWidth="10.0" prefWidth="114.0" />
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="103.0" minWidth="10.0" prefWidth="73.0" />
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="98.0" minWidth="10.0" prefWidth="69.0" />
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="98.0" minWidth="10.0" prefWidth="97.0" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="98.0" minWidth="10.0" prefWidth="58.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="91.0" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="89.0" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="97.0" minHeight="10.0" prefHeight="88.0" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="51.0" minHeight="8.0" prefHeight="49.0" vgrow="ALWAYS" />
+            </rowConstraints>
+            <children>
+                <Label prefHeight="40.0" prefWidth="194.0" text="New Username" GridPane.columnSpan="3">
+                    <font>
+                        <Font size="27.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                </Label>
+                <Label layoutX="10.0" layoutY="35.0" prefHeight="39.0" prefWidth="185.0" text="New Password" GridPane.columnSpan="3" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="27.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                </Label>
+                <TextField fx:id="userText" onKeyPressed="#keyPressed" prefHeight="31.0" prefWidth="167.0" promptText="username" GridPane.columnIndex="2" GridPane.columnSpan="2147483647">
+                    <GridPane.margin>
+                        <Insets left="35.0" top="5.0" />
+                    </GridPane.margin></TextField>
+
+                <Button mnemonicParsing="false" onAction="#createNewAccount" prefHeight="31.0" prefWidth="162.0" text="Create New Account" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="3">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                </Button>
+                <PasswordField fx:id="passwordText" onKeyPressed="#keyPressed" prefHeight="31.0" prefWidth="160.0" promptText="password" GridPane.columnIndex="2" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets left="35.0" top="5.0" />
+                    </GridPane.margin></PasswordField>
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnSpan="2" GridPane.rowIndex="2">
+               <children>
+                  <Label prefHeight="39.0" prefWidth="192.0" text="Confirm New">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="39.0" prefWidth="196.0" text="Password">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+               <GridPane.margin>
+                  <Insets top="8.0" />
+               </GridPane.margin>
+            </VBox>
+            <PasswordField fx:id="confirmPasswordText" onKeyPressed="#keyPressed" promptText="password" GridPane.columnIndex="2" GridPane.columnSpan="2147483647" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="35.0" top="5.0" />
+               </GridPane.margin>
+            </PasswordField>
+            </children>
+            <effect>
+                <DropShadow color="#697dab" />
+            </effect>
+        </GridPane>
+    </children>
+
+</Pane>

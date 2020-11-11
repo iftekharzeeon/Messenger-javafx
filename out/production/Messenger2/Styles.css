@@ -1,0 +1,19 @@
+.textflow-background {
+    -fx-background-color: #D8D4F1;
+    -fx-border-color: #867DB1;
+    -fx-border-width: 4;
+}
+
+.list-view-background {
+    -fx-background-color: #D8D4F1;
+    -fx-border-color: #867DB1;
+    -fx-border-width: 3;
+}
+
+.text-color {
+    -fx-text-fill: red;
+}
+
+.text-font {
+
+}
